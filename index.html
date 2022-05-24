@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class='container'>
+        <h1 class='title'>eCommerce Quiz</h1>
+        <h3 id='question-number'></h3>
+        <div class='questions'>
+          <div class='question-body active-question' id='question1'>
+            <h4 class='question'>Which of the following is not a real eCommerce platform?</h4>
+            <div class='answers'>
+              <div class='answer'>
+                <label>
+                  <input type='radio' name='question1'>
+                  Shopify
+                </label>
+              </div>
+              <div class='answer'>
+                <label>
+                  <input type='radio' name='question1'>
+                  WooCommerce
+                </label>
+              </div>
+              <div class='answer'>
+                <label>
+                  <input type='radio' name='question1' class='correct'>
+                  ShopCommerce
+                </label>
+              </div>
+              <div class='answer'>
+                <label>
+                  <input type='radio' name='question1'>
+                  BigCommerce
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class='question-body' id='question2'>
+            <h4 class='question'>If Shopify is so good, why are Shopify developers necessary?</h4>
+            <div class='answers'>
+              <div class='answer'>
+                <label>
+                  <input type='radio' name='question2'>
+                  To save time on things like store setups and migrations
+                </label>
+              </div>
+              <div class='answer'>
+                <label>
+                  <input type='radio' name='question2'>
+                  To extend the limited design options and functionalities of themes with custom code
+                </label>
+              </div>
+              <div class='answer'>
+                <label>
+                  <input type='radio' name='question2'>
+                  To provide support with a deep understanding of how the platform works and what its limitations are
+                </label>
+              </div>
+              <div class='answer'>
+                <label>
+                  <input type='radio' name='question2' class='correct'>
+                  All the above
+                </label>
+              </div>
+            </div>
+          </div>
+            <div class='question-body' id='question3'>
+            <h4 class='question'>Which of the following is true about Shopify developers?</h4>
+            <div class='answers'>
+              <div class='answer'>
+                <label>
+                  <input type='radio' name='question3'>
+                  They are paid extremely well
+                </label>
+              </div>
+              <div class='answer'>
+                <label>
+                  <input type='radio' name='question3'>
+                  There is a high demand for them
+                </label>
+              </div>
+              <div class='answer'>
+                <label>
+                  <input type='radio' name='question3'>
+                  They need to know web development, the platform itself, and the liquid template language
+                </label>
+              </div>
+              <div class='answer'>
+                <label>
+                  <input type='radio' name='question3' class='correct'>
+                  All the above
+                </label>
+              </div>
+            </div>
+           </div>
+        </div>
+        <div class='error'>
+          Please choose an answer
+        </div>
+        <div class='buttons'>
+          <button class='btn' id='previous'>❮ Previous</button>
+          <button class='btn active-button' id='next'>Next ❯</button>
+          <button class='btn' id='finish'>Finish</button>
+        </div>
+        <div class='score'>
+          <div>
+            <h3 class='score-text'>Congratulations on finishing the quiz!</h3>
+            <h3 class='score-text'>Here is your score:</h3>
+          </div>
+          <div id='score-number'>
+          </div>
+        </div>
+      </div>
+      <script src="index.js"></script>
+</body>
+</html>
